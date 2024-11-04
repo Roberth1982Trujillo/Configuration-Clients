@@ -1,2 +1,24 @@
 server:
   port: 9003
+
+spring:
+  application:
+    name: Rest-User-Service
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/bdprueba
+    username: root
+    password: root
+  jpa:
+    properties:
+      dialect: org.hibernate.dialect.MySQL5Dialect
+      hibernate:
+        format_sql: true
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+eureka:
+  client:
+    serviceUrl:
+      defaultzone: http://localhost:8761/eureka/
