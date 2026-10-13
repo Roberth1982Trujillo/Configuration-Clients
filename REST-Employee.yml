@@ -1,8 +1,8 @@
 spring:
   datasource:
     url: jdbc:postgresql://localhost:5432/bdprueba
-    username: postgres
-    password: root
+    username: root
+    password: sql
     driver-class-name: org.postgresql.Driver
   jpa:
     hibernate:
